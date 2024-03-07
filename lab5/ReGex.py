@@ -15,16 +15,16 @@ $               ends with 'world$'
 
 """
 def main():
-    file_path = r'C:\Users\User\Desktop\PP2_WWW\lab5\row.txt'  # Update with your file path
+    file_path = r'C:\Users\User\Desktop\PP2_WWW\lab5\row.txt'
     with open(file_path, 'r', encoding='utf-8') as file:
-        file_content = file.readlines()  # Read the content of the file as a list of lines
+        file_content = file.readlines()
         
-        pattern = r''  # Define the regex pattern
+        pattern = r'' 
         
         for line in file_content:
-            matches = re.findall(pattern, line)  # Use regex to find matches in the line
+            matches = re.findall(pattern, line) 
             if matches:
-                print("Found match in line:", line.strip())  # Print the entire line where match is found
+                print("Found match in line:", line.strip()) 
 
 if __name__ == "__main__":
     main()
